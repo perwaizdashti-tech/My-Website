@@ -27,12 +27,19 @@
             border: none;
             border-radius: 8px;
             font-size: 18px;
+            transition: all 0.1s ease;
         }
 
         /* بٹن کا Hover ایفیکٹ */
         .my-button:hover {
             background-color: #c0392b;
             cursor: pointer;
+        }
+
+        /* بٹن کا Active ایفیکٹ (موبائل پر دبانے کے لیے) */
+        .my-button:active {
+            transform: scale(0.95);
+            background-color: #a93226;
         }
     </style>
 </head>
@@ -42,7 +49,7 @@
     <p>میں نے HTML اور CSS کا استعمال کر کے اسے خوبصورت بنایا ہے۔</p>
 
     <!-- بٹن کا HTML -->
-    <button class="my-button">یہاں کلک کریں</button>
+    <button class="my-button">👈 یہاں کلک کریں</button>
 
 </body>
 </html>
