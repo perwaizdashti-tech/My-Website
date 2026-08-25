@@ -33,7 +33,7 @@
 
         /* مین مواد */
         .content {
-            padding: 50px 20px;
+            padding: 40px 20px;
         }
 
         h1 {
@@ -70,6 +70,41 @@
             transform: scale(0.95);
             background-color: #a93226;
         }
+
+        /* سروسز کارڈز کا کنٹینر */
+        .services-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+
+        /* الگ الگ کارڈ کا اسٹائل */
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -88,6 +123,23 @@
         <p>میں نے HTML اور CSS کا استعمال کر کے اسے خوبصورت بنایا ہے۔</p>
 
         <button class="my-button"><span>یہاں کلک کریں</span> 👈</button>
+    </div>
+
+    <!-- سروسز کے کارڈز -->
+    <h2 style="color: #2c3e50;">ہماری خدمات</h2>
+    <div class="services-container">
+        <div class="card">
+            <h3>💻 ویب ڈیزائننگ</h3>
+            <p>ہم جدید اور خوبصورت ویب سائٹس تیار کرتے ہیں۔</p>
+        </div>
+        <div class="card">
+            <h3>📱 ایپ ڈیوپلمنٹ</h3>
+            <p>ہم اینڈرائیڈ اور آئی فون کے لیے ایپس بناتے ہیں۔</p>
+        </div>
+        <div class="card">
+            <h3>🚀 ڈیجیٹل مارکیٹنگ</h3>
+            <p>ہم آپ کے کاروبار کو آن لائن گرو کرنے میں مدد کرتے ہیں۔</p>
+        </div>
     </div>
 
 </body>
