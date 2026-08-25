@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Styled Website</title>
+    <title>Dashti Tech - Portfolio</title>
     <style>
         body {
             background-color: #f4f4f4;
@@ -11,10 +11,9 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            direction: rtl;
         }
 
-        /* مینو بار کا اسٹائل */
+        /* Navigation Bar Style */
         .navbar {
             background-color: #2c3e50;
             padding: 15px 0;
@@ -32,7 +31,7 @@
             color: #27ae60;
         }
 
-        /* مین مواد */
+        /* Main Content */
         .content {
             padding: 40px 20px;
         }
@@ -46,7 +45,7 @@
             font-size: 20px;
         }
 
-        /* بٹن کا اسٹائل */
+        /* Button Style */
         .my-button {
             background-color: #e74c3c;
             color: white;
@@ -59,7 +58,6 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            direction: ltr;
         }
 
         .my-button:hover {
@@ -72,7 +70,7 @@
             background-color: #a93226;
         }
 
-        /* سروسز کارڈز کا کنٹینر */
+        /* Services Cards Container */
         .services-container {
             display: flex;
             justify-content: center;
@@ -82,7 +80,7 @@
             padding: 0 20px;
         }
 
-        /* الگ الگ کارڈ کا اسٹائل */
+        /* Individual Card Style */
         .card {
             background-color: white;
             border-radius: 10px;
@@ -107,7 +105,7 @@
             font-size: 14px;
         }
 
-        /* رابطہ فارم کا اسٹائل */
+        /* Contact Form Style */
         .contact-section {
             background-color: white;
             max-width: 400px;
@@ -115,12 +113,11 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            direction: rtl;
         }
 
         .form-group {
             margin-bottom: 15px;
-            text-align: right;
+            text-align: left;
         }
 
         .form-group label {
@@ -128,8 +125,6 @@
             margin-bottom: 5px;
             color: #2c3e50;
             font-weight: bold;
-            direction: rtl;
-            unicode-bidi: embed;
         }
 
         .form-group input, .form-group textarea {
@@ -139,8 +134,6 @@
             border-radius: 5px;
             box-sizing: border-box;
             font-size: 14px;
-            text-align: right;
-            direction: rtl;
         }
 
         .submit-btn {
@@ -158,7 +151,7 @@
             transform: scale(0.98);
         }
 
-        /* فوٹر کا اسٹائل */
+        /* Footer Style */
         footer {
             background-color: #2c3e50;
             color: white;
@@ -170,73 +163,73 @@
 </head>
 <body>
 
-    <!-- مینو بار -->
+    <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="#">ہوم</a>
-        <a href="#">خدمات</a>
-        <a href="#">ہمارے بارے میں</a>
-        <a href="#">رابطہ کریں</a>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
     </div>
 
-    <!-- صفحے کا مین مواد -->
+    <!-- Hero Content -->
     <div class="content">
-        <h1>سلام! یہ میری نئی ویب سائٹ ہے</h1>
-        <p>میں نے HTML اور CSS کا استعمال کر کے اسے خوبصورت بنایا ہے۔</p>
+        <h1>Welcome to My New Website!</h1>
+        <p>I have created this website using HTML and CSS.</p>
 
-        <button class="my-button"><span>یہاں کلک کریں</span> 👈</button>
+        <button class="my-button">👉 <span>Click Here</span></button>
     </div>
 
-    <!-- سروسز کے کارڈز -->
-    <h2 style="color: #2c3e50;">ہماری خدمات</h2>
+    <!-- Services Cards -->
+    <h2 style="color: #2c3e50;">Our Services</h2>
     <div class="services-container">
         <div class="card">
-            <h3>💻 ویب ڈیزائننگ</h3>
-            <p>ہم جدید اور خوبصورت ویب سائٹس تیار کرتے ہیں۔</p>
+            <h3>💻 Web Design</h3>
+            <p>We build modern and responsive websites for your business.</p>
         </div>
         <div class="card">
-            <h3>📱 ایپ ڈیوپلمنٹ</h3>
-            <p>ہم اینڈرائیڈ اور آئی فون کے لیے ایپس بناتے ہیں۔</p>
+            <h3>📱 App Development</h3>
+            <p>We create awesome Android and iOS mobile applications.</p>
         </div>
         <div class="card">
-            <h3>🚀 ڈیجیٹل مارکیٹنگ</h3>
-            <p>ہم آپ کے کاروبار کو آن لائن گرو کرنے میں مدد کرتے ہیں۔</p>
+            <h3>🚀 Digital Marketing</h3>
+            <p>We help you scale your business and grow online presence.</p>
         </div>
     </div>
 
-    <!-- رابطہ فارم -->
+    <!-- Contact Form -->
     <div class="contact-section">
-        <h2 style="color: #2c3e50; margin-top: 0;">ہم سے رابطہ کریں</h2>
+        <h2 style="color: #2c3e50; margin-top: 0;">Contact Us</h2>
         <form id="contactForm">
             <div class="form-group">
-                <label>نام:</label>
-                <input type="text" id="userName" placeholder="اپنا نام لکھیں">
+                <label>Name:</label>
+                <input type="text" id="userName" placeholder="Enter your name">
             </div>
             <div class="form-group">
-                <label>ای میل:</label>
-                <input type="email" placeholder="اپنا ای میل لکھیں">
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email">
             </div>
             <div class="form-group">
-                <label>پیغام:</label>
-                <textarea rows="4" placeholder="اپنا پیغام یہاں لکھیں..."></textarea>
+                <label>Message:</label>
+                <textarea rows="4" placeholder="Write your message here..."></textarea>
             </div>
-            <button type="button" class="submit-btn" onclick="sendMessage()">پیغام بھیجیں</button>
+            <button type="button" class="submit-btn" onclick="sendMessage()">Send Message</button>
         </form>
     </div>
 
-    <!-- فوٹر -->
+    <!-- Footer -->
     <footer>
-        <p style="color: white; font-size: 14px; margin: 0;">© 2026 جملہ حقوق محفوظ ہیں۔ | Dashti Tech</p>
+        <p style="color: white; font-size: 14px; margin: 0;">© 2026 All Rights Reserved. | Dashti Tech</p>
     </footer>
 
-    <!-- جاوا سکرپٹ (JavaScript) -->
+    <!-- JavaScript -->
     <script>
         function sendMessage() {
             var name = document.getElementById("userName").value;
             
             if(name === "") {
-                alert("براہ کرم اپنا نام درج کریں!");
+                alert("Please enter your name!");
             } else {
-                alert("شکریہ " + name + "! آپ کا پیغام ہمیں موصول ہو گیا ہے۔");
+                alert("Thank you, " + name + "! Your message has been sent successfully.");
             }
         }
     </script>
