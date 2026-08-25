@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="ur" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            direction: rtl;
         }
 
         /* مینو بار کا اسٹائل */
@@ -114,6 +115,7 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            direction: rtl;
         }
 
         .form-group {
@@ -126,6 +128,8 @@
             margin-bottom: 5px;
             color: #2c3e50;
             font-weight: bold;
+            direction: rtl;
+            unicode-bidi: embed;
         }
 
         .form-group input, .form-group textarea {
@@ -135,6 +139,8 @@
             border-radius: 5px;
             box-sizing: border-box;
             font-size: 14px;
+            text-align: right;
+            direction: rtl;
         }
 
         .submit-btn {
@@ -164,6 +170,7 @@
 </head>
 <body>
 
+    <!-- مینو بار -->
     <div class="navbar">
         <a href="#">ہوم</a>
         <a href="#">خدمات</a>
@@ -171,6 +178,7 @@
         <a href="#">رابطہ کریں</a>
     </div>
 
+    <!-- صفحے کا مین مواد -->
     <div class="content">
         <h1>سلام! یہ میری نئی ویب سائٹ ہے</h1>
         <p>میں نے HTML اور CSS کا استعمال کر کے اسے خوبصورت بنایا ہے۔</p>
@@ -178,6 +186,7 @@
         <button class="my-button"><span>یہاں کلک کریں</span> 👈</button>
     </div>
 
+    <!-- سروسز کے کارڈز -->
     <h2 style="color: #2c3e50;">ہماری خدمات</h2>
     <div class="services-container">
         <div class="card">
@@ -194,6 +203,7 @@
         </div>
     </div>
 
+    <!-- رابطہ فارم -->
     <div class="contact-section">
         <h2 style="color: #2c3e50; margin-top: 0;">ہم سے رابطہ کریں</h2>
         <form id="contactForm">
@@ -213,10 +223,12 @@
         </form>
     </div>
 
+    <!-- فوٹر -->
     <footer>
         <p style="color: white; font-size: 14px; margin: 0;">© 2026 جملہ حقوق محفوظ ہیں۔ | Dashti Tech</p>
     </footer>
 
+    <!-- جاوا سکرپٹ (JavaScript) -->
     <script>
         function sendMessage() {
             var name = document.getElementById("userName").value;
