@@ -152,7 +152,7 @@
             transform: scale(0.98);
         }
 
-        /* فوٹر (Footer) کا اسٹائل */
+        /* فوٹر کا اسٹائل */
         footer {
             background-color: #2c3e50;
             color: white;
@@ -164,7 +164,6 @@
 </head>
 <body>
 
-    <!-- مینو بار -->
     <div class="navbar">
         <a href="#">ہوم</a>
         <a href="#">خدمات</a>
@@ -172,7 +171,6 @@
         <a href="#">رابطہ کریں</a>
     </div>
 
-    <!-- صفحے کا مین مواد -->
     <div class="content">
         <h1>سلام! یہ میری نئی ویب سائٹ ہے</h1>
         <p>میں نے HTML اور CSS کا استعمال کر کے اسے خوبصورت بنایا ہے۔</p>
@@ -180,7 +178,6 @@
         <button class="my-button"><span>یہاں کلک کریں</span> 👈</button>
     </div>
 
-    <!-- سروسز کے کارڈز -->
     <h2 style="color: #2c3e50;">ہماری خدمات</h2>
     <div class="services-container">
         <div class="card">
@@ -197,13 +194,12 @@
         </div>
     </div>
 
-    <!-- رابطہ فارم -->
     <div class="contact-section">
         <h2 style="color: #2c3e50; margin-top: 0;">ہم سے رابطہ کریں</h2>
-        <form>
+        <form id="contactForm">
             <div class="form-group">
                 <label>نام:</label>
-                <input type="text" placeholder="اپنا نام لکھیں">
+                <input type="text" id="userName" placeholder="اپنا نام لکھیں">
             </div>
             <div class="form-group">
                 <label>ای میل:</label>
@@ -213,14 +209,25 @@
                 <label>پیغام:</label>
                 <textarea rows="4" placeholder="اپنا پیغام یہاں لکھیں..."></textarea>
             </div>
-            <button type="button" class="submit-btn">پیغام بھیجیں</button>
+            <button type="button" class="submit-btn" onclick="sendMessage()">پیغام بھیجیں</button>
         </form>
     </div>
 
-    <!-- فوٹر -->
     <footer>
         <p style="color: white; font-size: 14px; margin: 0;">© 2026 جملہ حقوق محفوظ ہیں۔ | Dashti Tech</p>
     </footer>
+
+    <script>
+        function sendMessage() {
+            var name = document.getElementById("userName").value;
+            
+            if(name === "") {
+                alert("براہ کرم اپنا نام درج کریں!");
+            } else {
+                alert("شکریہ " + name + "! آپ کا پیغام ہمیں موصول ہو گیا ہے۔");
+            }
+        }
+    </script>
 
 </body>
 </html>
