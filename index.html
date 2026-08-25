@@ -1,13 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="ur">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Styled Website</title>
     <style>
         body {
             background-color: #f4f4f4;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            padding: 50px;
+        }
+
+        /* مینو بار کا اسٹائل */
+        .navbar {
+            background-color: #2c3e50;
+            padding: 15px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #27ae60;
+        }
+
+        /* مین مواد */
+        .content {
+            padding: 50px 20px;
         }
 
         h1 {
@@ -19,7 +45,7 @@
             font-size: 20px;
         }
 
-        /* بٹن کا CSS اسٹائل */
+        /* بٹن کا اسٹائل */
         .my-button {
             background-color: #e74c3c;
             color: white;
@@ -28,15 +54,18 @@
             border-radius: 8px;
             font-size: 18px;
             transition: all 0.1s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            direction: ltr;
         }
 
-        /* بٹن کا Hover ایفیکٹ */
         .my-button:hover {
             background-color: #c0392b;
             cursor: pointer;
         }
 
-        /* بٹن کا Active ایفیکٹ (موبائل پر دبانے کے لیے) */
         .my-button:active {
             transform: scale(0.95);
             background-color: #a93226;
@@ -45,11 +74,21 @@
 </head>
 <body>
 
-    <h1>سلام! یہ میری نئی ویب سائٹ ہے</h1>
-    <p>میں نے HTML اور CSS کا استعمال کر کے اسے خوبصورت بنایا ہے۔</p>
+    <!-- مینو بار -->
+    <div class="navbar">
+        <a href="#">ہوم</a>
+        <a href="#">خدمات</a>
+        <a href="#">ہمارے بارے میں</a>
+        <a href="#">رابطہ کریں</a>
+    </div>
 
-    <!-- بٹن کا HTML -->
-    <button class="my-button">👉 یہاں کلک کریں</button>
+    <!-- صفحے کا مین مواد -->
+    <div class="content">
+        <h1>سلام! یہ میری نئی ویب سائٹ ہے</h1>
+        <p>میں نے HTML اور CSS کا استعمال کر کے اسے خوبصورت بنایا ہے۔</p>
+
+        <button class="my-button"><span>یہاں کلک کریں</span> 👈</button>
+    </div>
 
 </body>
 </html>
